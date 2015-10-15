@@ -2,6 +2,7 @@ import Common
 from pymongo import MongoClient
 import pymongo
 from Common import SamplingRates, Constants, Person
+from PopulateMongo import PopulateMongo
 import random
 
 def PopulateRandomPeople():
@@ -77,7 +78,9 @@ def CreateTrainingSetDatabase():
     Common.PutTrainingSet(Common.GetTrainingSet())
     Common.PutPeopleTrainingSet(Common.GetPeopleTrainingSet())
 
+databasesTextPath = 'd:\databases\\'
 def SetUp():
+    PopulateMongo(databasesTextPath)
     PopulateFeatureVectors()
     PopulatePeople()
     CreateTrainingSetDatabase()

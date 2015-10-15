@@ -46,6 +46,10 @@ class Constants:
     LabelR = "R"
     LabelQ = "Q"
     LabelS = "S"
+    Left = "Left"
+    Right = "Right"
+    MinPoint = "MinPoint"
+    MaxPoint = "MaxPoint"
 
     MongoPort = 27017
 
