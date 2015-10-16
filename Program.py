@@ -57,7 +57,7 @@ def Main():
             print
 
 def ShowWarnings(warnings):
-    print(colorama.Fore.YELLOW + colorama.Style.BRIGHT + 'Warnings ' + colorama.Style.RESET_ALL + '(based on raw personal details and ECG chart only):')
+    print(colorama.Fore.YELLOW + colorama.Style.BRIGHT + 'Warnings ' + colorama.Style.RESET_ALL + '(based on raw personal information and ECG chart only):')
     for warning in warnings:
         print('\t' + warning)
 
@@ -74,7 +74,7 @@ def ShowResults(diagnosis, closestChartsPeople, closestPeople):
 
 
 def ShowClosestPeople(closestPeople):
-    print('People who have the closest personal details are: ')
+    print('People who have the closest personal information are: ')
     for person in closestPeople:
         result = PersonToDescription(person, True)
         print(result)
