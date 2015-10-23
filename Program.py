@@ -129,8 +129,8 @@ def PersonToDescription(person, shouldPrintDiagnosis):
     if (person[Constants.Smoking] == 1):
         result += ', smoking'
     else:
-        result += ', not smoking'
-    result += ', sport active: ' + str(person['Sport'])
+        result += ', non-smoker'
+    result += ', physical activity score: ' + str(person['Sport'])
 
     if (sysBP < 90 & diBP < 60):
         bpStatus = 'low blood pressure'
